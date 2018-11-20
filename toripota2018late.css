@@ -8,11 +8,12 @@
   padding: 0 50px !important; }
   .slide_wrapper .slide h1, .slide_wrapper .slide h2, .slide_wrapper .slide h3, .slide_wrapper .slide h4, .slide_wrapper .slide h5, .slide_wrapper .slide h6 {
     font-weight: 900; }
-  .slide_wrapper .slide ul ul {
-    padding-left: 1em;
-    margin-top: .25em;
-    font-size: 88%;
-    color: #555; }
+  .slide_wrapper .slide ul {
+    padding-left: 1em; }
+    .slide_wrapper .slide ul ul {
+      margin-top: .25em;
+      font-size: 88%;
+      color: #555; }
   .slide_wrapper .slide em, .slide_wrapper .slide strong {
     color: #fa5da6;
     font-style: normal; }
