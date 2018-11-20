@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:500,900');
+
+$green: #137a6d;
+$accent: #fa5da6;
+
+.slide_wrapper {
+    .slide {
+        color: #333;
+        background: #f1f1f1;
+        font-family: 'M PLUS 1p', sans-serif;
+        font-size: calc(0.065px * var(--slide-height));
+        font-weight: 500;
+        padding: 0 50px !important;
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 900;
+        }
+
+        ul {
+            ul {
+                padding-left: 1em;
+                margin-top: .25em;
+                font-size: 88%;
+                color: #555;
+            }
+        }
+
+        em, strong {
+            color: $accent;
+            font-style: normal;
+        }
+    }
+
+    &:not(.only-headings) {
+        .slide_inner {
+            position: static !important;
+        }
+
+        .slide {
+            h1, h2 {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: calc(0.153px * var(--slide-height));
+                line-height: calc(0.153px * var(--slide-height));
+                padding: 0 .6em;
+                text-align: center;
+                background: $green;
+                color: #fff;
+                font-size: calc(0.045px * 1.5 * var(--slide-height));
+            }
+        }
+
+        .slide_bg,
+        .slide_inner {
+            margin: calc((0.03px) * var(--slide-height));
+            margin-top: calc((0.153px + 0.03px) * var(--slide-height));
+        }
+
+        .slide_bg {
+            border-radius: calc((0.01px) * var(--slide-height));
+            background: #fff url('./toripota2018late/doya_gray.png') no-repeat 95% 95%;
+            background-size: 20%;
+        }
+    }
+
+    &[data-template~="profile"] {
+        .slide_inner {
+            padding-left: calc(50% - (0.2px * var(--slide-height)));
+
+            img {
+                position: absolute;
+                left: 60px;
+                top: calc(50% + (0.153px * var(--slide-height) / 2));
+                transform: translate(0, -50%);
+                width: calc((0.44px) * var(--slide-height));
+                height: calc((0.44px) * var(--slide-height));
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &.only-headings {
+        .slide {
+            background: $green url('./toripota2018late/doya.png') no-repeat left bottom;
+            background-size: contain;
+            color: #fff;
+            text-align: center;
+
+            h1 {
+                color: #fff;
+                line-height: 1.5;
+                font-size: calc(0.1125px * var(--slide-height));
+
+                em, strong {
+                    color: #ccfacc;
+                }
+            }
+
+            h2 {
+                color: #ccfacc;
+                font-weight: 400;
+                font-size: calc(0.05px * var(--slide-height));
+                margin-top: 2em;
+            }
+
+        }
+    }
+}
