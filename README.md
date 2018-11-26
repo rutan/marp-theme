@@ -3,7 +3,7 @@
 marp theme css
 
 ## example
-```
+``````
 <style>@import 'https://marp-theme.rutan.info/toripota2018late.css';</style>
 
 # ぼくの **最高の** スライド
@@ -20,7 +20,7 @@ marp theme css
 - Ruたん
     - @ru_shalm
     - るたん
-    - Ruby / JavaScript / ゲーム制作
+    - Ruby / JavaScript /　ゲーム制作
 
 ----------
 
@@ -31,12 +31,32 @@ marp theme css
 ## どういうわけか？
 
 - パワポ用につくったテンプレ
-- marp用のCSSに移植した
+- ==marp用のCSS== に移植した
 - *→ 毎秒LTに飛び入り可能*
+
+-------
+
+## コードブロックもそれっぽく
+
+```ruby
+# すごいアイテム
+class SugoiItem
+  def initialize(name)
+    @name = name
+  end
+  attr_reader :name
+
+  def use
+    "#{name} をつかった"
+  end
+end
+```
+
+↑ こういう感じです ↑
 
 --------
 
 # Ruたんの次回作に<br>ご期待下さい
 
-```
+``````
 
