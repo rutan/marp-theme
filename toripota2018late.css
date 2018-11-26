@@ -2,33 +2,103 @@
 .slide_wrapper .slide {
   color: #333;
   background: #f1f1f1;
-  font-family: 'M PLUS 1p', sans-serif;
+  font-family: "M PLUS 1p", sans-serif;
   font-size: calc(0.065px * var(--slide-height));
   font-weight: 500;
   padding: 0 50px !important; }
-  .slide_wrapper .slide h1, .slide_wrapper .slide h2, .slide_wrapper .slide h3, .slide_wrapper .slide h4, .slide_wrapper .slide h5, .slide_wrapper .slide h6 {
+  .slide_wrapper .slide h1,
+  .slide_wrapper .slide h2,
+  .slide_wrapper .slide h3,
+  .slide_wrapper .slide h4,
+  .slide_wrapper .slide h5,
+  .slide_wrapper .slide h6 {
     font-weight: 900; }
+  .slide_wrapper .slide p {
+    text-align: center; }
   .slide_wrapper .slide ul {
     padding-left: 1em; }
     .slide_wrapper .slide ul ul {
-      margin-top: .25em;
+      margin-top: 0.25em;
       font-size: 88%;
       color: #555; }
-  .slide_wrapper .slide em, .slide_wrapper .slide strong {
+  .slide_wrapper .slide em,
+  .slide_wrapper .slide strong {
     color: #fa5da6;
     font-style: normal; }
+  .slide_wrapper .slide mark {
+    position: relative;
+    display: inline-block;
+    background: transparent; }
+    .slide_wrapper .slide mark:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      bottom: 10px;
+      display: block;
+      background: #ffff80;
+      height: 20px;
+      width: 100%; }
+  .slide_wrapper .slide pre {
+    background: #333;
+    color: #ccc;
+    border-radius: 6px;
+    font-size: calc(0.04px * var(--slide-height)); }
+    .slide_wrapper .slide pre .hljs-keyword,
+    .slide_wrapper .slide pre .hljs-selector-tag,
+    .slide_wrapper .slide pre .hljs-title,
+    .slide_wrapper .slide pre .hljs-section,
+    .slide_wrapper .slide pre .hljs-doctag,
+    .slide_wrapper .slide pre .hljs-name,
+    .slide_wrapper .slide pre .hljs-strong,
+    .slide_wrapper .slide pre .hljs-comment {
+      font-weight: normal;
+      font-style: normal; }
+    .slide_wrapper .slide pre .hljs-keyword {
+      color: #859900;
+      font-weight: normal; }
+    .slide_wrapper .slide pre .hljs-comment {
+      color: #64c28e; }
+    .slide_wrapper .slide pre .hljs-title,
+    .slide_wrapper .slide pre .hljs-section,
+    .slide_wrapper .slide pre .hljs-built_in,
+    .slide_wrapper .slide pre .hljs-literal,
+    .slide_wrapper .slide pre .hljs-type,
+    .slide_wrapper .slide pre .hljs-addition,
+    .slide_wrapper .slide pre .hljs-tag,
+    .slide_wrapper .slide pre .hljs-quote,
+    .slide_wrapper .slide pre .hljs-name,
+    .slide_wrapper .slide pre .hljs-selector-id,
+    .slide_wrapper .slide pre .hljs-selector-class,
+    .slide_wrapper .slide pre .hljs-meta,
+    .slide_wrapper .slide pre .hljs-symbol,
+    .slide_wrapper .slide pre .hljs-regexp,
+    .slide_wrapper .slide pre .hljs-attribute,
+    .slide_wrapper .slide pre .hljs-deletion,
+    .slide_wrapper .slide pre .hljs-variable,
+    .slide_wrapper .slide pre .hljs-template-variable,
+    .slide_wrapper .slide pre .hljs-link,
+    .slide_wrapper .slide pre .hljs-bullet {
+      color: #268bb2; }
+    .slide_wrapper .slide pre .hljs-string {
+      color: #32a79f; }
+    .slide_wrapper .slide pre .hljs-subst {
+      color: #ccc; }
+    .slide_wrapper .slide pre .hljs-class .hljs-title {
+      color: #cb4b16; }
 
 .slide_wrapper:not(.only-headings) .slide_inner {
   position: static !important; }
 
-.slide_wrapper:not(.only-headings) .slide h1, .slide_wrapper:not(.only-headings) .slide h2 {
+.slide_wrapper:not(.only-headings) .slide h1,
+.slide_wrapper:not(.only-headings) .slide h2 {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: calc(0.153px * var(--slide-height));
   line-height: calc(0.153px * var(--slide-height));
-  padding: 0 .6em;
+  padding: 0 0.6em;
   text-align: center;
   background: #137a6d;
   color: #fff;
@@ -64,7 +134,8 @@
     color: #fff;
     line-height: 1.5;
     font-size: calc(0.1125px * var(--slide-height)); }
-    .slide_wrapper.only-headings .slide h1 em, .slide_wrapper.only-headings .slide h1 strong {
+    .slide_wrapper.only-headings .slide h1 em,
+    .slide_wrapper.only-headings .slide h1 strong {
       color: #ccfacc; }
   .slide_wrapper.only-headings .slide h2 {
     color: #ccfacc;
