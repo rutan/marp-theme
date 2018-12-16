@@ -137,6 +137,8 @@
     .slide_wrapper.only-headings .slide h1 em,
     .slide_wrapper.only-headings .slide h1 strong {
       color: #ccfacc; }
+    .slide_wrapper.only-headings .slide h1 a {
+      color: #ccfacc; }
   .slide_wrapper.only-headings .slide h2 {
     color: #ccfacc;
     font-weight: 400;
